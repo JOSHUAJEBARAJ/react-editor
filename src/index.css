@@ -6,27 +6,29 @@ body {
 
 
 
+
+.flexbox-container{
+  display: flex;
+  margin-right: .5em;
+  min-width: 400px;
+  flex-grow: 1; /* fill up the whole space*/
+  justify-content: flex-start;
+
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.pane{
-  /* height: 100vh; /* split the pane */
-  /* width: 100vh; */ 
-  display: flex;
-  position: relative;
- 
-  flex-basis: 0;  
 
-  padding: .5rem;
-
-
-}
 
 .editor-title{
   display: flex;
   justify-content: space-between;
+
+ 
   background-color: hsl(255, 6%, 13%);
 color: white;
 padding: .5rem .5rem .5rem 1rem;
@@ -41,19 +43,26 @@ border-top-left-radius: .5rem;
   flex-grow: 1; /* fill up the whole space*/
   flex-basis: 0; /*all are same size*/ 
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  width: 100%;
   padding: .5rem;
   background-color: hsl(255, 6%, 25%);
 
 }
 
 .output-container{
-  flex-grow: 100; /* fill up the whole space*/
-  height: 5000;
+  flex-basis: 0;
+/* fill up the whole space*/
+height:90vh;
+width:60vh;
+
   flex-basis: 0; /*all are same size*/ 
   display: flex;
+  flex-shrink: 0;
 
   flex-direction: column;
   padding: .5rem;
+  background-color: white;
+
 
 }

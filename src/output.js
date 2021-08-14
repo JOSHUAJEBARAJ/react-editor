@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import ReactDom from 'react-dom'
-import remarkGfm from 'remark-gfm'
+import gfm from 'remark-gfm'
+import "github-markdown-css/github-markdown.css";
+
 
 export default function Output(props) {
     const {
@@ -9,7 +11,7 @@ export default function Output(props) {
     }=props
     return (
         <>
-         <div className="output-container"> 
+         <div className="output-container markdown-body"> 
                 <div className="editor-title">
               OUTPUT 
               <button 
@@ -19,7 +21,7 @@ export default function Output(props) {
 </button>
             </div>
         <div>
-            <ReactMarkdown children={value} remarkPlugins={[remarkGfm]} ></ReactMarkdown>
+            <ReactMarkdown children={value} remarkPlugins={[gfm]} ></ReactMarkdown>
             </div>
         </div>
    </>

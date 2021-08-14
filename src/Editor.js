@@ -19,14 +19,11 @@ export default function VsCode(props) {
     return (
         <>
         <div className="editor-container"> 
-        <div className="editor-title">
-               EDITOR
 
-            </div>
             <Editor
 onChange={handleChange}
-     height="50vh"
-     width="50vh"
+     height="100vh"
+     width="100vh"
      theme="vs-dark"
      defaultLanguage="markdown"
     //  defaultValue="test"
