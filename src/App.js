@@ -13,7 +13,7 @@ function App() {
   useEffect(()=>{
 
     const timeout = setTimeout(()=>{
-  setSrc(`${mark}`)
+  setSrc(mark)
   
     },250)
     return () => clearTimeout(timeout)

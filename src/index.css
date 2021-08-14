@@ -52,9 +52,8 @@ border-top-left-radius: .5rem;
   height: 5000;
   flex-basis: 0; /*all are same size*/ 
   display: flex;
-  color: white;
+
   flex-direction: column;
   padding: .5rem;
-  background-color: hsl(255, 6%, 25%);
 
 }
