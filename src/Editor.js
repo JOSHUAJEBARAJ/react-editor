@@ -8,31 +8,25 @@ export default function VsCode(props) {
     const {
         value,
         changeValue
-    }= props 
+    } = props
 
-    function handleChange(newValue,e){
-       //  console.log(newValue)
-         changeValue(newValue)
-
-
+    function handleChange(newValue, e) {
+        changeValue(newValue)
     }
-    return (
-        <>
-        <div className="editor-container"> 
-        <div className="editor-title">
-               EDITOR
 
+    return (
+            <div className="editor-container">
+                <div className="editor-title">
+                    EDITOR
+                </div>
+                <Editor
+                    onChange={handleChange}
+                    height="50vh"
+                    width="50vh"
+                    theme="vs-dark"
+                    defaultLanguage="markdown"
+                />
             </div>
-            <Editor
-onChange={handleChange}
-     height="50vh"
-     width="50vh"
-     theme="vs-dark"
-     defaultLanguage="markdown"
-    //  defaultValue="test"
-   />
-   </div>
-   </>
     )
 
 }
