@@ -27,6 +27,7 @@ onChange={handleChange}
      theme="vs-dark"
      defaultLanguage="markdown"
     //  defaultValue="test"
+    value={value}
    />
    </div>
    </>
