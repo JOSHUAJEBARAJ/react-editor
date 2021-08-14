@@ -1,13 +1,60 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.pane{
+  /* height: 100vh; /* split the pane */
+  /* width: 100vh; */ 
+  display: flex;
+  position: relative;
+ 
+  flex-basis: 0;  
+
+  padding: .5rem;
+
+
+}
+
+.editor-title{
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(255, 6%, 13%);
+color: white;
+padding: .5rem .5rem .5rem 1rem;
+/* Adding the curved effect */
+border-top-right-radius: .5rem;
+border-top-left-radius: .5rem;
+
+}
+
+
+.editor-container{
+  flex-grow: 1; /* fill up the whole space*/
+  flex-basis: 0; /*all are same size*/ 
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: hsl(255, 6%, 25%);
+
+}
+
+.output-container{
+  flex-grow: 100; /* fill up the whole space*/
+  height: 5000;
+  flex-basis: 0; /*all are same size*/ 
+  display: flex;
+  color: white;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: hsl(255, 6%, 25%);
+
 }
