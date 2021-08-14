@@ -19,7 +19,7 @@ code {
   display: flex;
   justify-content: space-between;
 
-  background-color: hsl(255, 6%, 13%);
+  background-color:#007bfe;
   color: white;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   /* Adding the curved effect */
@@ -55,4 +55,44 @@ code {
   flex-direction: column;
   padding: 0.5rem;
   background-color: white;
+}
+
+.top {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: #007bfe;
+}
+
+
+.top-button {
+  width: 100%;
+  margin-top: 5px;
+  height: 5vh;
+margin-left: 20px;
+border: none;
+border-radius: 0.5rem;
+padding: 2px 10px;
+}
+
+.top-count {
+  width: 5%;
+  margin-top: 5px;
+  margin-left: 800px;
+  margin-top: 2px;
+  display: grid;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 2px 10px;
+  font-size: 30px;
+}
+
+.title{
+  font-size: 30px;
+  color: white;
+  height: 10px;
+  margin-left: 700px;
+  text-align: center;
 }

@@ -5,6 +5,7 @@ import VsCode from "./Editor";
 import Editor from "@monaco-editor/react";
 import Output from "./output";
 import { ALL_SECTIONS } from "./sections";
+import CountdownApp from "./time";
 
 function App() {
   const [src, setSrc] = useState("");
@@ -22,13 +23,26 @@ function App() {
     setMark((currentMark) => currentMark + selectedSection.content);
   }
 
+  function handleTimer(){
+    console.log("Hello")
+  }
   return (
     <>
-      <h1>Hello</h1>
+    <div className="top">
+
+<p className="title"> Smart Questions</p>
+            <CountdownApp/ >
+
+
+
+
+      </div>
       <div className="flexbox-container">
         {/* List  */}
         <div className="list-group">
-          <h4>Sections</h4>
+        <button type="button" className="list-group-item list-group-item-action active" aria-current="true">
+   SECTIONS 
+  </button>
           {ALL_SECTIONS.map((section) => (
             <button
               type="button"
