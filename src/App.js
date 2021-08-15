@@ -7,6 +7,18 @@ import Output from "./output";
 import { ALL_SECTIONS } from "./sections";
 import CountdownApp from "./time";
 
+
+const BuyMeACoffeeSupport = () => {
+  return (
+     
+    <a href="https://www.buymeacoffee.com/PskV9Rt">
+      <img src="img/bmc.PNG" />
+    </a>
+     
+  );
+}
+
+
 function App() {
   const [src, setSrc] = useState("");
   const [mark, setMark] = useState("");
@@ -28,10 +40,13 @@ function App() {
   }
   return (
     <>
+
     <div className="top">
 
-<p className="title"> Smart Questions</p>
+<p className="title"> 😎 Smart Questions Asking Questions Made Easy</p>
             <CountdownApp/ >
+
+
 
 
 
@@ -61,7 +76,17 @@ function App() {
           <Output value={mark} />
         </div>
       </div>
-      <span> this was created by </span>
+
+      <div className="top">
+
+<p className="bottom "> Made with ❤️ by  <a href="https://joshuajebaraj.com/"> Joshua Jebaraj</a> </p>
+
+
+
+
+
+
+      </div>
     </>
   );
 }

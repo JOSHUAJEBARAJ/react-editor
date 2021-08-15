@@ -22,7 +22,7 @@ export default function VsCode(props) {
 
             <Editor
 onChange={handleChange}
-     height="100vh"
+     height="90vh"
      width="100vh"
      theme="vs-dark"
      defaultLanguage="markdown"

@@ -41,11 +41,12 @@ export default function CountdownApp() {
   return (
     <div className="top">
       <div className="top-count">
-    {twoDigits(secondsToDisplay)}
+    
+      ⏱️ {twoDigits(secondsToDisplay)}
    
       </div>
 
-      <button onClick={handleStart} type="button" className="top-button">
+      <button onClick={handleStart} type="button" className="top-button   ">
         START
       </button>
 

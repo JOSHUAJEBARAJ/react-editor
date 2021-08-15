@@ -14,10 +14,12 @@ export default function Output(props) {
          <div className="output-container markdown-body"> 
                 <div className="editor-title">
               OUTPUT 
-              <button 
+              <button>
+
+      <img src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="my image" 
   onClick={() =>  navigator.clipboard.writeText(value)}
->
-  Copy
+/>
+
 </button>
             </div>
         <div>

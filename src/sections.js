@@ -21,7 +21,7 @@ content: '## Error Logs\n'
     },
     {
 title: "Specification",
-content: "## Specification \n * Operating System: \n * Software Version: \n * Others:"
+content: "## Specification \n * Operating System: \n * Software Version: \n * Others:\n"
     },
     {
         title: "References",
