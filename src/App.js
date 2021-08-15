@@ -7,17 +7,13 @@ import Output from "./output";
 import { ALL_SECTIONS } from "./sections";
 import CountdownApp from "./time";
 
-
 const BuyMeACoffeeSupport = () => {
   return (
-     
     <a href="https://www.buymeacoffee.com/PskV9Rt">
       <img src="img/bmc.PNG" />
     </a>
-     
   );
-}
-
+};
 
 function App() {
   const [src, setSrc] = useState("");
@@ -35,29 +31,26 @@ function App() {
     setMark((currentMark) => currentMark + selectedSection.content);
   }
 
-  function handleTimer(){
-    console.log("Hello")
+  function handleTimer() {
+    console.log("Hello");
   }
   return (
     <>
-
-    <div className="top">
-
-<p className="title"> 😎 Smart Questions Asking Questions Made Easy</p>
-            <CountdownApp/ >
-
-
-
-
-
-
+      <div className="top">
+        <div></div>
+        <p className="title"> 😎 Smart Questions Asking Questions Made Easy</p>
+        <CountdownApp />
       </div>
       <div className="flexbox-container">
         {/* List  */}
         <div className="list-group">
-        <button type="button" className="list-group-item list-group-item-action active" aria-current="true">
-   SECTIONS 
-  </button>
+          <button
+            type="button"
+            className="list-group-item list-group-item-action active"
+            aria-current="true"
+          >
+            SECTIONS
+          </button>
           {ALL_SECTIONS.map((section) => (
             <button
               type="button"
@@ -77,16 +70,13 @@ function App() {
         </div>
       </div>
 
-      <div className="top">
-
-<p className="bottom "> Made with ❤️ by  <a href="https://joshuajebaraj.com/"> Joshua Jebaraj</a> </p>
-
-
-
-
-
-
-      </div>
+      <p className="bottom">
+        {" "}
+        Made with ❤️ by <a href="https://joshuajebaraj.com/">
+          {" "}
+          Joshua Jebaraj
+        </a>{" "}
+      </p>
     </>
   );
 }

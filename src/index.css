@@ -1,11 +1,9 @@
 body {
   margin: 0;
   min-height: 100vh;
-
 }
 
 .top-pane {
-
   height: 90vh;
 }
 
@@ -30,7 +28,7 @@ code {
   display: flex;
   justify-content: space-between;
 
-  background-color:#007bfe;
+  background-color: #007bfe;
   color: white;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   /* Adding the curved effect */
@@ -43,15 +41,11 @@ code {
   padding: 2px 10px;
 }
 
-
-
-
 .list-group-item:first-child {
-    border-top-left-radius: 0rem !important;
-    border-top-right-radius: 0rem !important;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
 }
 .editor-container {
-
   flex-grow: 1; /* fill up the whole space*/
   flex-basis: 0; /*all are same size*/
   display: flex;
@@ -83,26 +77,25 @@ code {
 
   background-color: #007bfe;
 }
-
+.timer {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .top-button {
   font-weight: 500;
-  position: absolute;
   margin-top: 10px;
-margin-left: 600px;
-height: 40px;
-width: 80px;
-background-color: #fd0;
-border: none;
-border-radius: 0.5rem;
-/* padding: 2px 10px; */
+  height: 40px;
+  width: 80px;
+  background-color: #fd0;
+  border: none;
+  border-radius: 0.5rem;
+  /* padding: 2px 10px; */
 }
 
 .top-count {
   font-weight: 400;
-  width: 5%;
   margin-top: 5px;
-  margin-left: 500px;
   margin-top: 2px;
   display: grid;
   border: none;
@@ -113,28 +106,22 @@ border-radius: 0.5rem;
   white-space: nowrap;
 }
 
-.title{
-  font-family: 'Lobster', cursive;
-  font-size: 35px;
+.title {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
   color: white;
   height: 10px;
-  margin-left: 500px;
   text-align: center;
   white-space: nowrap;
 }
 
-
 .bottom {
   white-space: nowrap;
-  display: grid;
   text-align: center;
   color: white;
   font-size: 20px;
-  margin-left: 800px;
   font-weight: 400;
-
-  grid-template-columns: repeat(3, 1fr);
-
+  margin: 0;
   background-color: #007bfe;
 }
 

@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
-
 const STATUS = {
   STARTED: "Started",
   STOPPED: "Stopped"
 };
 
-const INITIAL_COUNT = 30    ;
+const INITIAL_COUNT = 30;
 
 export default function CountdownApp() {
   const [secondsRemaining, setSecondsRemaining] = useState(INITIAL_COUNT);
@@ -39,17 +38,12 @@ export default function CountdownApp() {
     // passing null stops the interval
   );
   return (
-    <div className="top">
-      <div className="top-count">
-    
-      ⏱️ {twoDigits(secondsToDisplay)}
-   
-      </div>
+    <div className="timer">
+      <div className="top-count">⏱️ {twoDigits(secondsToDisplay)}</div>
 
-      <button onClick={handleStart} type="button" className="top-button   ">
+      <button onClick={handleStart} type="button" className="top-button">
         START
       </button>
-
     </div>
   );
 }
